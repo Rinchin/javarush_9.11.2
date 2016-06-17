@@ -12,7 +12,14 @@ public class Solution
         for (int i = 10; i >= 0; i--)
         {
             System.out.println(i);
-
+            try
+            {
+                Thread.sleep(100);
+            }
+            catch (InterruptedException e)
+            {
+                System.out.println(e);
+            }
             //напишите тут ваш код
         }
     }
